@@ -1,0 +1,46 @@
+﻿
+@{
+
+    var podaci = (List<AutoVM>)ViewData["key"];int b= 0;
+}
+
+<h3>Raspolozivi Automobili</h3>
+<hr/>
+<table class="table">
+    <thead>
+        <tr>
+            <th>rBr</th>
+            <th>Proizvodjac</th>
+            <th>Model</th>
+            <th>Boja</th>
+            <th>Godiste</th>
+            <th>Brisi</th>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach(AutoVM x in podaci)
+        {
+        <tr>
+            @{ b++;}
+            <td>@b</td>
+            <td>@x.Proizvodjac</td>
+            <td>@x.Model</td>
+            <td>@x.Boja</td>
+            <td>@x.Godiste</td>
+            <td>
+                <a class="btn-danger img-rounded" href="/Home/Obrisi?id=@x.ID">Obrisi</a>
+            </td>
+
+        </tr>
+        }
+
+    </tbody>
+
+
+</table>
+<div style="font-size:large;"  ><a style="color:blue"href="/home/dodaj">Dodaj</a></div>
+
+
+

@@ -1,0 +1,48 @@
+﻿@model Klase.Auto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Auto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proizvodjac)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Proizvodjac.ProizvodjacID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Boja)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Boja)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Godiste)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Godiste)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Novo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Novo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AutoID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

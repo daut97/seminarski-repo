@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seminarski", "seminarski\seminarski.csproj", "{FF53FA2D-BCD6-4060-A86C-C0C99665A417}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BBE79CC-C589-4F51-BC32-21761298DDAA} = {8BBE79CC-C589-4F51-BC32-21761298DDAA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klase", "Klase\Klase.csproj", "{8BBE79CC-C589-4F51-BC32-21761298DDAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF53FA2D-BCD6-4060-A86C-C0C99665A417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF53FA2D-BCD6-4060-A86C-C0C99665A417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF53FA2D-BCD6-4060-A86C-C0C99665A417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF53FA2D-BCD6-4060-A86C-C0C99665A417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BBE79CC-C589-4F51-BC32-21761298DDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBE79CC-C589-4F51-BC32-21761298DDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBE79CC-C589-4F51-BC32-21761298DDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBE79CC-C589-4F51-BC32-21761298DDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEB2D895-9CE7-4B72-BC62-79B1DF18CCF0}
+	EndGlobalSection
+EndGlobal

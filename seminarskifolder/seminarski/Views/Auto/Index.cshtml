@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Klase.Auto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Proizvodjac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Boja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Godiste)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Novo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Proizvodjac.Naziv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Boja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Godiste)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Novo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AutoID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AutoID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AutoID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
